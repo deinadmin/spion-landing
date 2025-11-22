@@ -16,7 +16,7 @@ export default function PageTransition({
         key={pathname}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0 }}
+        exit={{ opacity: 0, transition: { duration: 0 } }}
         transition={{ ease: "easeOut", duration: 0.3 }}
         className="flex-1 flex flex-col"
       >
